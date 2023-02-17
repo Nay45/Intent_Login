@@ -15,19 +15,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tampil"
-        android:text="Tampil"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:gravity="center"/>
+        android:text="Sambut"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_regular"/>
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ShowPass"
-        android:text="Pass"
-        android:gravity="center"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"/>
+        android:id="@+id/recycle">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_main"
+            tools:listitem="@layout/card_view"/>
+
+    </RelativeLayout>
 
 </LinearLayout>

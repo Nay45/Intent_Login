@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var ShowPass: CheckBox
 
     private val KEY_EMAIL = "EA"
-    private val KEY_PASS = "BRUH"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,7 +37,6 @@ class MainActivity : AppCompatActivity() {
                 if (Email.isNotBlank() && Pass.isNotBlank()) {
                     val i = Intent(this, Activity_2::class.java)
                     i.putExtra(KEY_EMAIL, Email)
-                    i.putExtra(KEY_PASS, Pass)
                     startActivity(i)
                 } else {
                     Toast.makeText(applicationContext, "YOU NEED TO FILL YOUR EMAIL", Toast.LENGTH_SHORT).show()
