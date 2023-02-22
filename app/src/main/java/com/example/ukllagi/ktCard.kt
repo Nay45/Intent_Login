@@ -39,7 +39,7 @@ class ktCard(private val listBarang: ArrayList<Data_Barang>): RecyclerView.Adapt
         holder.tvPrice.text = price
 
         holder.btnFav.setOnClickListener{
-            Toast.makeText(holder.itemView.context, "Add to fav " + listBarang[position].nama, Toast.LENGTH_SHORT).show()
+            Toast.makeText(holder.itemView.context, "Add " + listBarang[position].nama + " to fav list", Toast.LENGTH_SHORT).show()
         }
 
         holder.itemView.setOnClickListener{
