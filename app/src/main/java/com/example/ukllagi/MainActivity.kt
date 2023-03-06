@@ -13,6 +13,7 @@ import android.widget.Toast
 class MainActivity : AppCompatActivity() {
     private lateinit var email: EditText
     private lateinit var btnSend: Button
+    private lateinit var btnSignUp: Button
 
     private lateinit var PassInput: EditText
     private lateinit var ShowPass: CheckBox
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         email = findViewById(R.id.input_email)
         btnSend = findViewById(R.id.btn_login)
+        btnSignUp = findViewById(R.id.btn_signUp)
 
         PassInput = findViewById(R.id.pass)
         ShowPass = findViewById(R.id.showpass)
@@ -44,6 +46,16 @@ class MainActivity : AppCompatActivity() {
             } catch (e: Exception) {
                 e.printStackTrace()
                 Toast.makeText(applicationContext, "ERROR, TRY AGAIN!", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        btnSignUp.setOnClickListener {
+            try {
+                val i = Intent(this, FragmentBar::class.java)
+                startActivity(i)
+            } catch (e: Exception) {
+                e.printStackTrace()
+                Toast.makeText(applicationContext, "Cant Go To SignUp", Toast.LENGTH_SHORT).show()
             }
         }
 
