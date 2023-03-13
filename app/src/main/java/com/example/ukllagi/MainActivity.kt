@@ -8,14 +8,16 @@ import android.text.method.PasswordTransformationMethod
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
+import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var email: EditText
+    private lateinit var email: TextInputEditText
     private lateinit var btnSend: Button
-    private lateinit var btnSignUp: Button
+    private lateinit var btnSignUp: TextView
 
-    private lateinit var PassInput: EditText
+    private lateinit var PassInput: TextInputEditText
     private lateinit var ShowPass: CheckBox
 
     private val KEY_EMAIL = "EA"

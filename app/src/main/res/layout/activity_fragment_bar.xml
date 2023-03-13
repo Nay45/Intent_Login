@@ -9,15 +9,12 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/Theme.UKLLAGI">
+        android:layout_height="wrap_content">
 
         <com.google.android.material.tabs.TabLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/TabLayout"
-            android:background="?attr/colorPrimary"
-            app:tabTextColor="@android:color/background_light"/>
+            android:id="@+id/TabLayout"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
